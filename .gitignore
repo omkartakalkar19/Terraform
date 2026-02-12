@@ -1,17 +1,25 @@
 # Terraform runtime files
-.terraform/
 **/.terraform/
 
 # State files
-*.tfstate
-*.tfstate.backup
+**/*.tfstate
+**/*.tfstate.backup
 
-# Lock file (optional: usually keep this)
-# .terraform.lock.hcl
+# Lock file
+**/.terraform.lock.hcl
 
 # Variables (secrets)
-*.tfvars
-*.tfvars.json
+**/*.tfvars
+**/*.tfvars.json
+terraform.tfvars
+
+# Secrets / keys
+*.pem
+*.key
+.env
+
+# Binaries
+*.exe
 
 # OS files
 .DS_Store
@@ -20,11 +28,3 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
-
-**/.terraform/
-**/.terraform.lock.hcl
-**/*.tfstate
-**/*.tfstate.backup
-**/*.tfvars
-terraform.tfvars
-*.exe
